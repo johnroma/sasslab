@@ -1,0 +1,16 @@
+@import "partials/variables";
+@import "partials/normalize";
+@import "partials/mixins";
+@import "partials/base";
+
+#banner {
+	padding: 10px;
+	padding-bottom: 0px;
+	background: red;
+}
+
+#logo {
+	width: 24px;
+	height: auto;
+	border: 2px solid green;
+}

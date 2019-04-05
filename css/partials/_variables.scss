@@ -1,0 +1,28 @@
+// Some people like naming based on where the color
+// will be used while others prefer names that
+// represent the color
+
+$red: #ff0000;
+$white: #ffffff;
+$gray: #808080;
+$pink: #ffcbdb;
+$brown: #964b00;
+$orange: #ff7f00;
+$yellow: #ffff00;
+$green: #00ff00;
+$cyan: #00ffff;
+$blue: #0000ff;
+$violet: #7f00ff;
+$black: #000000;
+$duke-blue: #001a57;
+$blue-gray: #6699cc;
+$main-green: #00647d;
+$alice-blue: #f0f8ff;
+$ash-gray: #b2beb5;
+
+/*
+You can define a default that is used only if a value isn't
+assigned any place else
+
+$default-text-color: $black !default;
+*/
