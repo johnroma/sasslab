@@ -10,6 +10,7 @@
     "stylelint-config-standard": "^18.2.0"
   },
   "dependencies": {
+    "postcss-cli": "^6.1.2",
     "prettier-stylelint": "^0.4.2",
     "stylelint": "^9.10.1",
     "stylelint-scss": "^3.5.4"
