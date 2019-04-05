@@ -11,3 +11,10 @@
 	color: $tc;
   }
   */
+
+@mixin border-radius($prop) {
+	border-radius: $prop;
+}
+@mixin box-shadow($prop) {
+	box-shadow: $prop;
+}
