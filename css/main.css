@@ -375,7 +375,7 @@ body {
 }
 
 article p a {
-  color: #0000ff;
+  color: #ff0000;
 }
 
 article p a:hover, article p a:focus {
@@ -389,13 +389,13 @@ article p a:visited {
 #banner {
   padding: 10px;
   padding-bottom: 0px;
-  background: red;
+  background: #ff0000;
 }
 
 #logo {
   width: 24px;
   height: auto;
-  border: 2px solid green;
+  border: 2px solid #00ff00;
 }
 
 #logo-text {
@@ -506,7 +506,7 @@ footer {
 .left-sidebar-links a {
   display: block;
   color: #00647d;
-  opacity: 0.7;
+  opacity: 0.2;
 }
 
 .left-sidebar-links a:hover {
@@ -518,7 +518,8 @@ footer {
 }
 
 .left-sidebar-links:last-child {
-  border: none;
+  border-top: 3px solid #0000ff;
+  border-bottom: 3px solid #0000ff;
 }
 
 .example-element {
@@ -609,15 +610,78 @@ footer {
   margin: 10px 0px;
 }
 
-img[alt="Programming Frameworks"] {
-  content: image-url("featured-image.png");
-  /*
-	width: image-width('../images/featured-image.png');
-	height: image-height('../images/featured-image.png');
-	*/
+#main-title {
+  text-shadow: #fc0 1px 0 10px;
 }
 
-#riddle, #riddle-answer {
+footer, #horz-nav {
+  background-image: -webkit-gradient(linear, right top, left top, from(#333), color-stop(50%, #333), color-stop(75%, #eee), color-stop(75%, #333));
+  background-image: linear-gradient(to left, #333, #333 50%, #eee 75%, #333 75%);
+}
+
+img[alt="Programming Frameworks"] {
+  content: image-url("featured-image.png");
+  width: image-width("../images/featured-image.png");
+  height: image-height("../images/featured-image.png");
+}
+
+#riddle {
   background-color: #b2beb5;
+}
+
+#vert-nav ul li:nth-child(1) {
+  background-color: #fffff2;
+}
+
+#vert-nav ul li:nth-child(2) {
+  background-color: #ffffe6;
+}
+
+#vert-nav ul li:nth-child(3) {
+  background-color: #ffffd9;
+}
+
+#vert-nav ul li:nth-child(4) {
+  background-color: #ffffcc;
+}
+
+#vert-nav ul li:nth-child(5) {
+  background-color: #ffffbf;
+}
+
+#vert-nav ul li:nth-child(6) {
+  background-color: #ffffb3;
+}
+
+#vert-nav ul li:nth-child(7) {
+  background-color: #ffffa6;
+}
+
+#vert-nav ul li:nth-child(8) {
+  background-color: #ffff99;
+}
+
+#vert-nav ul li:nth-child(9) {
+  background-color: #ffff8c;
+}
+
+#vert-nav ul li:nth-child(10) {
+  background-color: #ffff80;
+}
+
+#vert-nav ul li:nth-child(11) {
+  background-color: #ffff73;
+}
+
+#vert-nav ul li:nth-child(12) {
+  background-color: #ffff66;
+}
+
+#vert-nav ul li:nth-child(13) {
+  background-color: #ffff59;
+}
+
+#vert-nav ul li:nth-child(14) {
+  background-color: #ffff4d;
 }
 /*# sourceMappingURL=main.css.map */

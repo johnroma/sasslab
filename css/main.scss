@@ -6,13 +6,13 @@
 #banner {
 	padding: 10px;
 	padding-bottom: 0px;
-	background: red;
+	background: #ff0000;
 }
 
 #logo {
 	width: 24px;
 	height: auto;
-	border: 2px solid green;
+	border: 2px solid $green;
 }
 
 #logo-text {
@@ -128,7 +128,7 @@ footer {
 	a {
 		display: block;
 		color: $main-green;
-		opacity: 0.7;
+		opacity: 0.2;
 		&:hover {
 			opacity: 1;
 		}
@@ -138,7 +138,10 @@ footer {
 .left-sidebar-links {
 	border-bottom: 2px solid $main-green;
 	&:last-child {
-		border: none;
+		border: {
+			top: 3px solid $blue;
+			bottom: 3px solid $blue;
+		}
 	}
 }
 
@@ -151,14 +154,19 @@ footer {
 		left: 1px solid $green;
 	}
 }
-// @extend existing properties
-#riddle {
+
+%riddle {
 	padding: 20px;
 	background-color: $alice-blue;
 }
 
+// @extend existing properties
+#riddle {
+	@extend %riddle;
+}
+
 #riddle-answer {
-	@extend #riddle;
+	@extend %riddle;
 	margin-top: 10px;
 }
 
@@ -277,32 +285,31 @@ footer {
 // Color, horizontal then verical offset, blur amount
 
 #main-title {
-	//	@include text-shadow(rgba(blue, 0.2) 2px 2px 3px);
+	@include text-shadow();
 }
 
 // Created for extension
 // Direction or left / right / top / bottom, color stops
 
 %main-green-gradient {
-	//	@include background-image(linear-gradient(left, $main-green 80%, $white));
+	@include background-image();
 }
 
 footer {
-	//	@extend %main-green-gradient;
+	@extend %main-green-gradient;
 }
 
 #horz-nav {
-	//	@extend %main-green-gradient;
+	@extend %main-green-gradient;
 }
 // Target the img with the given alt and change the src
 // and restore the proper size
 
 img[alt="Programming Frameworks"] {
 	content: image-url("featured-image.png");
-	/*
-	width: image-width('../images/featured-image.png');
-	height: image-height('../images/featured-image.png');
-	*/
+
+	width: image-width("../images/featured-image.png");
+	height: image-height("../images/featured-image.png");
 }
 
 // Use a Compass mixin to scale 2x horz & vert
@@ -322,7 +329,7 @@ article p:nth-child(2) {
 }
 // We can change properties based on conditions
 
-$riddle-color: gray;
+$riddle-color: $gray;
 
 @if $riddle-color == blue {
 	#riddle {
@@ -334,14 +341,13 @@ $riddle-color: gray;
 	}
 }
 // We can use for loops to change as we iterate
- 
+
 $prct-yellow: 5%;
- 
+
 @for $i from 1 through 14 {
-  #vert-nav ul li:nth-child(#{$i}){
-    background-color: mix($yellow, $white, $prct-yellow);
-  }
- 
-  $prct-yellow: $prct-yellow + 5%
- 
+	#vert-nav ul li:nth-child(#{$i}) {
+		background-color: mix($yellow, $white, $prct-yellow);
+	}
+
+	$prct-yellow: $prct-yellow + 5%;
 }

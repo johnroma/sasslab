@@ -18,3 +18,16 @@
 @mixin box-shadow($prop) {
 	box-shadow: $prop;
 }
+
+@mixin text-shadow() {
+	text-shadow: #fc0 1px 0 10px;
+}
+@mixin background-image() {
+	background-image: linear-gradient(
+		to left,
+		#333,
+		#333 50%,
+		#eee 75%,
+		#333 75%
+	);
+}
