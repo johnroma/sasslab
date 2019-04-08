@@ -402,6 +402,10 @@ article p a:visited {
   vertical-align: 50%;
   color: #00647d;
   font-weight: bold;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%;
 }
 
 #search-input {
@@ -580,7 +584,7 @@ footer {
 }
 
 #vert-nav ul li:nth-child(6) {
-  background-color: gray;
+  background-color: #ffff00;
 }
 
 #vert-nav ul li:nth-child(7) {
@@ -601,8 +605,8 @@ footer {
 
 #riddle-answer {
   border-radius: 5px;
-  -webkit-box-shadow: 5px 5px 5px 2px gray;
-          box-shadow: 5px 5px 5px 2px gray;
+  -webkit-box-shadow: 5px 5px 5px 2px #ff0000;
+          box-shadow: 5px 5px 5px 2px #ff0000;
 }
 
 #riddle-answer {

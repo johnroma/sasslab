@@ -1,3 +1,20 @@
 
 css/main.css.map
 node_modules/
+**/node_modules
+node_modules/eslint-plugin-prettier/package.json
+node_modules/eslint-config-prettier/package.json
+node_modules/autoprefixer/README.md
+node_modules/autoprefixer/package.json
+node_modules/autoprefixer/lib/value.js
+node_modules/autoprefixer/lib/supports.js
+node_modules/autoprefixer/lib/resolution.js
+node_modules/autoprefixer/lib/prefixes.js
+node_modules/autoprefixer/lib/prefixer.js
+node_modules/autoprefixer/lib/hacks/gradient.js
+node_modules/autoprefixer/lib/hacks/flex.js
+node_modules/autoprefixer/lib/hacks/cross-fade.js
+node_modules/autoprefixer/lib/hacks/border-radius.js
+node_modules/autoprefixer/lib/hacks/background-clip.js
+node_modules/autoprefixer/data/prefixes.js
+node_modules/autoprefixer/CHANGELOG.md

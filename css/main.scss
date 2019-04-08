@@ -19,6 +19,7 @@
 	vertical-align: 50%;
 	color: #00647d;
 	font-weight: bold;
+	text-size-adjust: 100%;
 }
 
 #search-input {
@@ -238,7 +239,7 @@ footer {
 // Make the color passed grayscale
 
 #vert-nav ul li:nth-child(6) {
-	background-color: grayscale($yellow);
+	background-color: $yellow;
 }
 #vert-nav ul li:nth-child(7) {
 	background-color: adjust-color($main-green, $red: 0, $green: 40, $blue: 30);
@@ -269,7 +270,7 @@ footer {
 	@include border-radius(5px);
 
 	// Horizontal then vertical offset, blur, spread, color
-	@include box-shadow(5px 5px 5px 2px gray);
+	@include box-shadow(5px 5px 5px 2px #ff0000);
 }
 
 // Creating properties just so we can extend them
@@ -314,13 +315,6 @@ img[alt="Programming Frameworks"] {
 
 // Use a Compass mixin to scale 2x horz & vert
 // Move horz & vert, rotate 45deg and perform multiple transforms
-
-#logo {
-	//	@include scale(2, 2);
-	//	@include transform(
-	//	translateX(700px) translateY(10px) scale(2, 2) rotate(-45deg)
-	//	);
-}
 
 // Add the compass drop shadow on all text in the p
 

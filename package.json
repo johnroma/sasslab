@@ -1,16 +1,25 @@
 {
   "scripts": {
-    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' "
+    "fix-styles": "prettier-stylelint --write 'src/**/*.{css,scss}' ",
+    "postcss": "postcss css/main.css -o css/main-post.css"
   },
   "devDependencies": {
+    "autoprefixer": "^9.5.1",
     "eslint-config-prettier": "^4.1.0",
     "eslint-plugin-prettier": "^3.0.1",
+    "postcss-cli": "^6.1.2",
+    "postcss-extend": "^1.0.5",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-simple-vars": "^5.0.2",
     "prettier": "1.16.4",
     "stylelint-config-recommended": "^2.1.0",
-    "stylelint-config-standard": "^18.2.0"
+    "stylelint-config-standard": "^18.2.0",
+    "eslint": "^5.16.0",
+    "postcss": "^7.0.14"
   },
   "dependencies": {
-    "postcss-cli": "^6.1.2",
     "prettier-stylelint": "^0.4.2",
     "stylelint": "^9.10.1",
     "stylelint-scss": "^3.5.4"
